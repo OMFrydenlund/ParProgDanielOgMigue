@@ -10,11 +10,20 @@ namespace ParProgDanielOgMigue
     {
         public string Type { get; set; }
         public string Name { get; set; }
-
+        public Item()
+        {
+            
+        }
         public Item(string name, string type)
         {
             Name = name;
             Type = type;
         }
+        
+        public void PrintItemInformation()
+        {
+            Console.WriteLine($"Name: {Name} Type: {Type}");
+        }
+    
     }
 }
